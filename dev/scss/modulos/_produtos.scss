@@ -1,0 +1,123 @@
+	.produtos {
+			display: flex;
+			align-items: center;
+			width: 1230px;
+            flex-direction: column;
+			.produtos-header{
+                margin-top: 26px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                img.produtos-hedear-img{
+
+                    width: auto;
+                    height: auto;
+                }
+
+                h2.produtos-header-title{
+                    /* Base text style */
+                        color: #8e7255;
+                        font-family: "Gotham Extra Light";
+                        font-size: 47px;
+                        font-weight: 400;
+                        font-variant: small-caps;
+                }
+
+            }
+
+            .produtos-bt{
+                    /* Base text style */
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #8e7255;
+                    font-family: "Gotham Extra Light";
+                    font-size: 25px;
+                    font-weight: 400;
+                    font-variant: small-caps;   
+                    /* Style for "Botão ver" */
+                    width: 182px;
+                    height: 48px;
+                    background-color: rgba(142, 114, 85, 0.2);
+                    border: 2px solid #8e7255;     
+                    cursor:pointer;
+
+                    &:hover{
+                        background-color: rgba(142, 114, 85, 0.5);
+                        
+                    }      
+            }
+            .produtos-list {
+				width: 100%;
+				flex-wrap: wrap;
+				display: flex;
+
+				.produtos-produto {
+					width: 281px;
+					height: 281px;
+					margin: 8px;
+					border: 3px solid #cdbdb1;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					position: relative;
+					.produtos-img {}
+					.produtos-detais {
+						width: 100%;
+						height: 100%;
+						background-color: #edbf31;
+						position: absolute;
+						display: flex;
+						  opacity: 0;
+						&:hover {
+							opacity: 0.66;
+						}
+						span {
+							/* Base text style */
+							position: absolute;
+							right: 0;
+							left: 0;
+							width: 204px;
+							height: 100px;
+							color: #664624;
+							font-family: "Gotham Extra Light";
+							font-size: 20px;
+							font-weight: 400;
+							margin: auto;
+							top: 27px;
+							text-align: center;
+						}
+						a {
+							/* Style for "Botão comp" */
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							position: absolute;
+							right: 0;
+							left: 0;
+							margin: auto;
+							bottom: 10px;
+							width: 161px;
+							height: 48px;
+							background-color: rgba(142, 114, 85, 0.2);
+							border: 2px solid #8e7255;
+							text-decoration: none;
+							color: #8e7255;
+							font-family: "Gotham Extra Light";
+							font-size: 25px;
+							font-weight: 400;
+                            text-transform: uppercase;
+                            cursor:pointer;
+						
+                            &:hover{
+
+                                background-color: rgba(142, 114, 85, 0.4);
+						
+                            }
+                        }
+
+					}
+				}
+			}
+		}

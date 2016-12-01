@@ -1,0 +1,166 @@
+@import 'helpers/_normalize';
+$font-color:#8e7255;
+$background-roxo:#410249;
+
+
+@font-face {
+	font-family: 'Gotham Extra Light';
+	src: url('/res/lib/font/gothan/xlight-webfont.woff2') format('woff2'), url('/res/lib/font/gothan/xlight-webfont.woff') format('woff'), url('/res/lib/font/gothan/xlight-webfont.ttf') format('truetype'), url('/res/lib/font/gothan/xlight-webfont.svg#gotham_extralightregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	width: 100%;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	>header {
+		width: 100%;
+		display: flex;
+		border-top: 50px solid $background-roxo;
+		align-items: center;
+		div.logo {
+			background: url(/res/img/header.png);
+			width: 770px;
+			height: 243px;
+			background-repeat: no-repeat;
+			background-size: contain;
+			z-index: 2;
+			position: absolute;
+			right: 0;
+			left: 0;
+			margin: auto;
+		}
+		hr.menu-line {
+			width: 100%;
+			border: 0.3px dashed #dcc6b0;
+			position: absolute;
+			top: 200px;
+			max-width: 1230px;
+			width: 100%;
+		}
+		>.container {
+			>nav.menu {
+				margin-top: 160px;
+				display: flex;
+				width: 100%;
+				z-index: 1;
+				z-index: 3;
+				min-width: 1300px;
+				height: 47px;
+				width: 1100px;
+				justify-content: center;
+				ul.menu-content {
+					list-style-type: none;
+					width: 100%;
+					display: flex;
+					justify-content: space-around;
+					a.menu-link {
+						text-decoration: none;
+						font-family: 'Gotham Extra Light';
+						text-transform: uppercase;
+						color: $font-color;
+						font-size: 24px;
+						&.selecionado,
+						&:hover {
+							transition: all 0.5s;
+							font-size: 24px;
+							border-bottom: 1px solid $font-color;
+						}
+					}
+				}
+			}
+		}
+	}
+	.container {
+		max-width: 1230px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: auto;
+	}
+	main.main {
+		display: flex;
+		align-items: center;
+		margin: 0 auto;
+		align-items: flex-start;
+		flex-direction: column;
+		&::after {
+			content: " ";
+			width: 100%;
+			height: 486px;
+			background: linear-gradient(#efe3ef, white);
+			position: absolute;
+			z-index: 0;
+			left: 0;
+		}
+		>a.capa {
+			width: 1230px;
+			z-index: 1;
+			position: relative;
+			.left-symbols {
+				position: absolute;
+				left: 14px;
+				top: 0;
+			}
+			.right-symbols {
+				position: absolute;
+				right: 14px;
+				top: 0;
+			}
+			margin-bottom: 32px;
+		}
+		.banner {
+			width: 100%;
+			display: flex;
+			.banner-content {
+				position: relative;
+				width: 49%;
+				height: 291px;
+				img {
+					width: 100%;
+					height: 100%;
+				}
+				.banner-link {
+					/* Style for "Botão" */
+					width: 149px;
+					height: 48px;
+					background-color: rgba(255, 255, 255, 0.2);
+					border: 2px solid white;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					/* Base text style */
+					color: white;
+					font-family: "Gotham Extra Light";
+					font-size: 25px;
+					font-weight: 400;
+					font-variant: small-caps;
+					position: absolute;
+					bottom: 23px;
+					text-decoration: none;
+					font-family: 'Gotham Extra Light';
+					text-transform: uppercase;
+					&:hover {
+						background: rgba(255, 255, 255, 0.5);
+						transition: background 0.5 ease-in-out;
+					}
+					&.left {
+						right: 90px;
+					}
+					&.right {
+						left: 90px;
+					}
+				}
+			}
+		}
+	
+	}
+}
+
+
+
+@import 'modulos/_produtos';
+@import 'modulos/_artigo';
+@import 'modulos/_footer';

@@ -1,0 +1,23 @@
+.artigo{
+.artigo-header{
+                margin-top: 26px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                img.artigo-hedear-img{
+
+                    width: auto;
+                    height: auto;
+                }
+
+                h2.artigo-header-title{
+                    /* Base text style */
+                        color: #8e7255;
+                        font-family: "Gotham Extra Light";
+                        font-size: 47px;
+                        font-weight: 400;
+                        font-variant: small-caps;
+                }
+}
+}
